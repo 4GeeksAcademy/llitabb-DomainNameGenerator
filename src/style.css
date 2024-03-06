@@ -1,5 +1,5 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
-#dominios-lista {
+#list-domain {
   list-style: none; /* Elimina los marcadores de lista */
   padding: 0; /* Elimina el relleno predeterminado */
   text-align: center; /* Centra el texto en el contenedor */

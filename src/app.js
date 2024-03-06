@@ -9,17 +9,18 @@ window.onload = function() {
   let pronoun = ["the", "our"];
   let adj = ["great", "big"];
   let noun = ["jogger", "racoon"];
-  let listaDominios = document.getElementById("dominios-lista");
+  let domainList = document.getElementById("list-domain");
 
-  //función condicional para generar todas las posibilidades de dominio que
+  //Función condicional para generar todas las posibilidades de dominio
   for (let i = 0; i < pronoun.length; i++) {
     for (let j = 0; j < adj.length; j++) {
       for (let k = 0; k < noun.length; k++) {
-        let dominio = pronoun[i] + adj[j] + noun[k] + ".com";
-        //Creo elemento <li> para cada dominio generado para que aparezcan como una lista
+        let domain = pronoun[i] + adj[j] + noun[k] + ".com";
+
+        //Creo elemento <li> para cada domain generado para que aparezcan como una lista
         let domainItems = document.createElement("li");
-        domainItems.textContent = dominio;
-        listaDominios.appendChild(domainItems);
+        domainItems.textContent = domain;
+        domainList.appendChild(domainItems);
       }
     }
   }
